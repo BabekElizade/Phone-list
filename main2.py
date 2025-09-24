@@ -15,7 +15,7 @@ operation = input("Choose operation: ").upper()
 #-------------------------------------------------------------------------------------------------------
 
 if operation == phone["new_sum"]:
-    say = int(input("Say daxil et: "))
+    say = int(input("Enter Number: "))
     summa = []
     i = 13
     while i <= say and i < len(file):
@@ -25,12 +25,12 @@ if operation == phone["new_sum"]:
     summa_copy = [float(x.replace(",", ".")) for x in summa]
 
     cem = sum(summa_copy)
-    print("Cəm:", cem)
+    print("Summa:", cem)
 
 #-----------------------------------------------------------------------------------------------------    
 
 if operation == phone["old_sum"]:
-    say1 = int(input("Say daxil et: "))
+    say1 = int(input("Enter Number: "))
     summa1 = []
     i = 14
     while i <= say1 and i < len(file):
@@ -40,12 +40,12 @@ if operation == phone["old_sum"]:
     summa_copy1 = [float(x1.replace(",", ".")) for x1 in summa1]
 
     cem1 = sum(summa_copy1)
-    print("Cəm:", cem1)
+    print("Summa:", cem1)
     
 #-----------------------------------------------------------------------------------------------------
 
 if operation == phone["year"]:
-    say2 = int(input("Say daxil et:"))
+    say2 = int(input("Enter Number:"))
     year_list = []
     phone_list = []
     son1 = []
@@ -66,5 +66,6 @@ if operation == phone["year"]:
     print(son1)
     
 #----------------------------------------------------------------------------------------------------
+
 
         
